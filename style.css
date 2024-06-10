@@ -1,0 +1,126 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container>header {
+    background-image: url("Images/sv.jpg");
+    height: 0;
+    padding-bottom: 25%;
+    background-size: 100% 100%;
+}
+.container>nav {
+    text-align: center;
+    font-variant: small-caps;
+    line-height: 40px;
+    color: white;
+    background-color: orangered;
+}
+.container>article {
+    min-height: 400px;
+    width: 75%;
+    float: left;
+    background-color: white;
+    padding: 10px 10px 10px 0;
+    box-sizing: border-box;
+}
+.container > aside {
+    min-height: 400px;
+    width: 25%;
+    float: right;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.container > footer {
+    line-height: 50px;
+    border-top: 5px double orangered;
+    background-color: orangered;
+    text-align: center;
+    font-variant: small-caps;
+    clear:both;
+    color: white;
+}
+iframe[name=page] {
+    width: 100%;
+    min-height: 400px;
+}
+/* H Menu */
+.menu > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 3px;
+    background-color: orangered;
+    text-align: center;
+}
+.menu > ul > li {
+    display: inline-block;
+    position: relative;
+}
+.menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0 10px;
+    line-height: 40px;
+}
+.menu > ul > li > a:hover {
+    color: yellow;
+}
+.menu  ul ul {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 200px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+} 
+.menu > ul > li:hover > ul {
+    display: block;
+}
+.menu ul ul a {
+    line-height: 30px;
+    text-align: left;
+    display: block;
+    padding: 0 10px;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+}
+.menu ul ul a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+/* VMenu */
+.vmenu {
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+}
+.vmenu a {
+    background: url("Images/dot1.png") no-repeat 10px center;
+    display: block;
+    border-bottom: 1px dotted orangered;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+}
+.vmenu a:hover {
+    background: url("Images/dot2.png") no-repeat 10px center;
+    border-bottom: 1px dotted white;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
